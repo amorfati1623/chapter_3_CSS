@@ -1,16 +1,18 @@
 .box {
-  border: 50px solid red;
+  border: 50px solid #e84118;
   width: 200px;
   padding: 50px;
   margin-bottom: 20px;
 }
 
 .green {
-  border-color: green;
+  border-color: #44bd32;
+  visibility: hidden;
+  /* display : none 은 영역을 차지하지 않고 완전히 삭제된것처럼 보이게 한다 */
 }
 
 .blue {
-  border-color: blue;
+  border-color: #273c75;
 }
 
 h1 {
@@ -47,7 +49,12 @@ h1::before {
     ),
     linear-gradient(#eee 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
-  text-indent: 10%;
+  padding-left: 10%;
+  /* 
+    text-indent: 10%; 들여쓰기란 단어에 꽂혀서 이걸 쓴채로 어떻게든 전체 문장 들여쓰기 해보려고 
+    계속 삽질했는데 포기하고 정답 봤습니다 ㅠㅠ
+    그래도 덕분에 패딩은 확실히 기억된것 같아요..
+  */ 
 }
 
 h1:first-child {
